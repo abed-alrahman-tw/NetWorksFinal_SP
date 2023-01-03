@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/filter_background"
+    tools:context=".activites.OrderDetailsActivity">
+
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="OrderDetails"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/img_back"
+        app:layout_constraintTop_toTopOf="@id/img_back" />
+
+    <TextView
+        android:id="@+id/jobName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="carpenter"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv5" />
+
+    <ImageView
+        android:id="@+id/problemImg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="25dp"
+
+        android:src="@drawable/door"
+        app:layout_constraintTop_toBottomOf="@id/jobName" />
+
+    <ImageView
+        android:id="@+id/customerImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/problemImg" />
+
+    <TextView
+        android:id="@+id/customerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:text="Mohammed R."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/customerImage"
+        app:layout_constraintTop_toTopOf="@id/customerImage" />
+
+    <TextView
+        android:id="@+id/phoneEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
+        android:drawablePadding="5dp"
+        android:text="+970598645485"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/customerImage"
+        app:layout_constraintTop_toBottomOf="@id/customerImage" />
+
+
+    <TextView
+        android:id="@+id/locationTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_outline_location_on_24"
+        android:text=" Location"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@id/phoneEt"
+        app:layout_constraintTop_toBottomOf="@id/phoneEt" />
+
+
+    <TextView
+        android:id="@+id/dateTvShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="5/6/2021"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/locationTv"
+        app:layout_constraintTop_toBottomOf="@id/locationTv" />
+
+    <TextView
+        android:id="@+id/locationDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        android:text="This text is an example of text that can be replaced in the same space, this text has been generated from the Arabic text generator, where you can generate such text or many other texts in addition to increasing the number of characters generated by the application."
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/dateTvShow" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="15dp"
+        android:background="#0D000000"
+        app:layout_constraintBottom_toTopOf="@id/orderNowBtn" />
+
+    <Button
+        android:id="@+id/orderNowBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/item_button"
+        android:text="Order NOW"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
